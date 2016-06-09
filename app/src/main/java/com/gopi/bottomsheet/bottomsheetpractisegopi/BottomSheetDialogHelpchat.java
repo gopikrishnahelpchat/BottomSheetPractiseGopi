@@ -87,30 +87,7 @@ public class BottomSheetDialogHelpchat extends BottomSheetDialog {
                         View parentView = ((View) view.getParent());
                         parentView.setFitsSystemWindows(true);
                         BottomSheetBehavior<View> bottomSheetBehavior = BottomSheetBehavior.from(((parentView)));
-
                         bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-
-                       /* view.measure(0, 0);
-                        bottomSheetBehavior.setPeekHeight(view.getMeasuredHeight());
-
-                        CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) parentView.getLayoutParams();
-                        *//*if (params.getBehavior() instanceof BottomSheetBehavior) {
-                            ((BottomSheetBehavior)params.getBehavior()).setBottomSheetCallback(mBottomSheetBehaviorCallback);
-                        }*//*
-                        params.gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
-                        parentView.setLayoutParams(params);*/
-
-//                        bottomSheetBehavior.onTouchEvent(null,view.getParent(),Mot)
-//                        bottomSheetBehavior.onInterceptTouchEvent()
-                        /*mBottomSheetDialog.setOnDismissListener(new OnDismissListener() {
-                            @Override
-                            public void onDismiss(DialogInterface dialog) {
-
-                            }
-                        });*/
-
-//                        bottomSheetBehavior.onNestedScrollAccepted(coordinatorLayout,);
-                       // mBottomSheetDialog.setCanceledOnTouchOutside(false);
                         mBottomSheetDialog.show();
 
                         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
