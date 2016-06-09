@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView android:id="@+id/bottom_sheet_item_image"
+        android:layout_width="48dp"
+        android:contentDescription="Bottom Image"
+        android:layout_centerHorizontal="true"
+        android:layout_height="48dp" />
+    <!-- android:src="@drawable/ic_launcher" -->
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottom_sheet_item_text"
+        android:layout_below="@+id/bottom_sheet_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#808080"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:text=""
+        />
+
+</RelativeLayout>
